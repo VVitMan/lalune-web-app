@@ -2,13 +2,18 @@
   "name": "server",
   "module": "index.js",
   "type": "module",
+  "scripts": {
+    "dev": "bun --watch index.js"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "body-parser": "^1.20.3"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1"
   }
 }
